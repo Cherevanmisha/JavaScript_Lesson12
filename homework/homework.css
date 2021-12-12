@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.htmlDivElement {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.datum {
+    width: 220px;
+    height: 260px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid darkgrey;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.datum:hover {
+    background: #d8e4ef;
+    transition: .3s;
+    transform: rotateY(10grad);
+}
+
+.datum h3 {
+    margin: 0;
+}
+
+.datum h4 {
+    height: 50px;
+}
+
+.comments {
+    width: 220px;
+    height: 260px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid darkgrey;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.comments:hover {
+    background: #d8e4ef;
+    transition: .3s;
+    transform: rotateY(10grad);
+}
+
+.comments h3 {
+    margin: 0;
+}
+
+.comments h4 {
+    height: 50px;
+}
+
