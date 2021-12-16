@@ -6,12 +6,3 @@
 
 
 
-let u1 = {
-    name: 'vasya',
-    greeting: function (msg, a, b) {
-        console.log(`${msg} my name is ${this.name}`);
-    }
-}
-let u2 = {name: 'anton'};
-u1.greeting.call(u2, 'hi', 'asda', 'qwe');
-u1.greeting.apply(u2, ['hi', 'asda', 'qwe']);
