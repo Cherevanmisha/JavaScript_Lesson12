@@ -1,11 +1,11 @@
-1.
+
 // Отримати відповідь з цього ресурсу відповідь, та вивести в документ об'єкти.
 // Застилізувати, за допомоги css, щоб отримати 5 елементів в рядку.
 // Для кожного елементу свій блок div.post
 // Всі характеристики повинні мати свої блоки всередені div.post
 // https://jsonplaceholder.typicode.com/posts
 
-
+//
 // fetch('https://jsonplaceholder.typicode.com/posts')
 //     .then((response) => {
 //         return response.json();
@@ -38,18 +38,32 @@
 // https://jsonplaceholder.typicode.com/comments
 
 
-fetch('https://jsonplaceholder.typicode.com/posts/1/comments')
-          .then(response => response.json())
-          .then(coments => {
-               for (let i = 0; i < coments.length; i++) {
-                    console.log(coments[i]);
-                    let usersBlock = document.getElementById('block')
-                    let item = document.createElement('div');
-                              item.innerText=` ${coments[i].postId} ${coments[i].body} 
-                              ${coments[i].name} ${coments[i].email}`;
-                              usersBlock.appendChild(item);
-                              document.body.appendChild(usersBlock)
+// fetch('https://jsonplaceholder.typicode.com/comments')
+//     .then(response => response.json())
+//     .then(coments => {
+//         for (const comentElement of coments) {
+//             let comDivElement = document.createElement('div');
+//             comDivElement.classList.add('comment')
+//
+//             let coment= document.createElement('div');
+//             coment.innerText = `${comentElement.postId}`;
+//
+//             let idElement = document.createElement('div');
+//             idElement.innerText = `${comentElement.id}`;
+//
+//             let nameElement = document.createElement('div');
+//             nameElement.innerText = `${comentElement.name}`;
+//
+//             let emailElement = document.createElement('div');
+//             emailElement.innerText = `${comentElement.email}`;
+//
+//             let bodyElement = document.createElement('div');
+//             bodyElement.innerText = `${comentElement.body}`;
+//
+//
+//             comDivElement.append(coment,idElement,nameElement,emailElement,bodyElement)
+//             document.body.appendChild(comDivElement)
+//         }
+//     });
 
-                  }
-           })
 
